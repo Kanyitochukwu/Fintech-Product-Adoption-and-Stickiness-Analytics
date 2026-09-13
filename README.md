@@ -1,4 +1,4 @@
-# 📊 Moniebook Product Adoption & Merchant Lifetime Value Analytics
+# 📊 Fintech Product Adoption & Customer Lifetime Value Analytics
 
 An end-to-end fintech business intelligence analytics and customer lifetime value (CLV) framework evaluating multi-product adoption, user engagement depth, operational friction, and merchant retention across **7,000 merchants** and **1.18M sessions** (2024–2025).
 
