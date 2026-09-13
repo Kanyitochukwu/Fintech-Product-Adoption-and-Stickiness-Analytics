@@ -1,0 +1,9 @@
+Product_ID,Product_Name,Product_Category,Launch_Date,Unique_Users,Usage_Events,Total_Sessions,Feature_Transactions_Completed,Feature_Failed_Transactions,Avg_Session_Duration,Feature_Adoption_Rate
+PRD001,"Digital Payments",Payments,"2024-01-01 00:00:00",5485,88656,415465,1148562,33065,30.57,0.7464
+PRD002,"POS Terminal","POS Services","2024-03-15 00:00:00",3574,56343,263513,724901,53531,30.57,0.7456
+PRD003,"Business Banking",Banking,"2024-05-01 00:00:00",3194,50622,236422,657003,18692,30.42,0.7445
+PRD004,Moniebook,"Inventory Management","2024-10-01 00:00:00",2186,21341,162212,190896,5298,49.92,0.8938
+PRD005,"Working Capital Loan",Credit,"2025-02-01 00:00:00",824,9216,43114,33052,909,30.34,0.7243
+PRD006,"Expense Cards",Cards,"2025-01-15 00:00:00",671,7679,36081,26889,778,30.68,0.7241
+PRD007,"Business Payroll",Operations,"2025-06-01 00:00:00",316,2399,11392,8460,206,31.32,0.7341
+PRD008,"Smart Invoicing",Operations,"2025-09-01 00:00:00",535,2424,11347,8469,246,30.12,0.7182
