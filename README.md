@@ -28,7 +28,7 @@ The project combines **SQL, MySQL, DAX, and Power BI** to transform raw relation
 
 # 📌 Executive Summary
 
-![Executive Overview]([screenshots/executive_overview.png](https://github.com/Kanyitochukwu/Fintech-Product-Adoption-and-Stickiness-Analytics/blob/main/01_Executive_Overview.png))
+![Executive Overview](01_Executive_Overview.png)
 
 Fintech platforms generate large volumes of transaction and behavioral data, but transaction volume alone does not explain why merchants remain engaged, become inactive, or generate long-term customer value.
 
