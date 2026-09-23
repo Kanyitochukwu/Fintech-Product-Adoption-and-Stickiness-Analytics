@@ -18,20 +18,54 @@ Fintech platforms often capture massive volumes of transaction data without unde
 ---
 
 ## 🧱 Architecture & Data Engineering Workflow
-[Raw Relational Datasets] (Customers, Products, Features, Transactions, Activity)
-│
-▼
-[SQL Transformation & Aggregation Layer]
-├── pbi_customer_360 (Customer-level grain: CLV, Profit, Churn Risk)
-├── powerbi_product_summary (Product grain: Users, Sessions, Failures)
-├── powerbi_moniebook_adoption_curve (Monthly cohort trends)
-└── powerbi_churn_risk_table (Inactivity & operational alerts)
-│
-▼
-[Power BI Analytical Star Schema]
-├── Relational Modeling & Dimension Lookups
-├── Complex DAX (Activity decay, cohort lags, dynamic flags)
-└── Diagnostic Merchant 360 Drillthrough Interface
+<table>
+  <tr>
+    <td align="center">
+
+### 🗄️ RAW RELATIONAL DATASETS
+
+`Customers` · `Products` · `Features` · `Transactions` · `Activity`
+
+</td>
+  </tr>
+
+  <tr>
+    <td align="center">⬇️</td>
+  </tr>
+
+  <tr>
+    <td align="center">
+
+### ⚙️ SQL TRANSFORMATION & AGGREGATION
+
+| Analytical Table | Grain / Purpose |
+|---|---|
+| `pbi_customer_360` | Customer-level · CLV · Profit · Churn Risk |
+| `powerbi_product_summary` | Product-level · Users · Sessions · Failures |
+| `powerbi_moniebook_adoption_curve` | Monthly cohort trends |
+| `powerbi_churn_risk_table` | Inactivity · Operational alerts |
+
+</td>
+  </tr>
+
+  <tr>
+    <td align="center">⬇️</td>
+  </tr>
+
+  <tr>
+    <td align="center">
+
+### 📊 POWER BI ANALYTICAL STAR SCHEMA
+
+**Relational Modeling & Dimension Lookups**  
+↓  
+**Complex DAX** — Activity Decay · Cohort Lags · Dynamic Flags  
+↓  
+**Merchant 360 Drillthrough Interface**
+
+</td>
+  </tr>
+</table>
 
 ---
 
@@ -95,5 +129,5 @@ The Power BI workbook is structured across 8 operational and executive report ca
 ## 💻 Tech Stack
 
 * **SQL:** Advanced data transformation, relational grain consolidation, feature extraction.
-* **Power BI Desktop:** Multi-page report architecture, custom UI layout, parameter controls, drillthrough actions.
+* **Power BI:** Multi-page report architecture, custom UI layout, parameter controls, drillthrough actions.
 * **DAX:** Inactivity lag modeling, dynamic conditional formatting, customer segmentation measures.
