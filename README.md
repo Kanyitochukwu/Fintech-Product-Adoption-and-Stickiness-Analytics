@@ -192,7 +192,7 @@ Analyzes transaction failures and product-level issues to identify potential sou
 
 # 📈 Power BI Dashboard #
 
-[Download Power BI Report](powerbi/Fintech%20Data%20Power%20BI.pbix)
+[Download Power BI Report](Fintech%20Data%20Power%20BI.pbix)
 
 The Power BI report is structured across **8 analytical and operational canvases**.
 
