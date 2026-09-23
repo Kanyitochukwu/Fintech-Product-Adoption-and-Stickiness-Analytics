@@ -91,8 +91,8 @@ The analysis was designed around the following questions:
 ┌───────────────────────────────────────────────┐
 │           RAW RELATIONAL DATASETS             │
 │                                               │
-│ Customers · Products · Features              │
-│ Transactions · Activity                      │
+│ Customers · Products · Features               │
+│ Transactions · Activity                       │
 └───────────────────────┬───────────────────────┘
                         │
                         ▼
@@ -100,7 +100,7 @@ The analysis was designed around the following questions:
 │           SQL TRANSFORMATION LAYER            │
 │                                               │
 │ Cleaning · Joins · Aggregations               │
-│ Feature Engineering · Analytical Marts       │
+│ Feature Engineering · Analytical Marts        │
 └───────────────────────┬───────────────────────┘
                         │
                         ▼
@@ -116,7 +116,7 @@ The analysis was designed around the following questions:
 │             MERCHANT 360° ANALYTICS           │
 │                                               │
 │ CLV · Profit · Adoption · Engagement          │
-│ Churn Risk · Product Usage · Geography       │
+│ Churn Risk · Product Usage · Geography        │
 └───────────────────────────────────────────────┘
 ```
 
