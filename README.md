@@ -240,7 +240,7 @@ Compares merchant segments based on:
 * Profitability
 * Churn
 
-### 05 — Retention & Churn [Retention & Churn](05_Retention_Churn.png)
+### 05 — Retention & Churn [Retention & Churn](05_Retention_and_Churn.png)
 
 Analyzes:
 
@@ -250,7 +250,7 @@ Analyzes:
 * Churn-risk indicators
 * Engagement decay
 
-### 06 — CLV & Revenue Impact [CLV & Revenue](06_CLV_Revenue.png)
+### 06 — CLV & Revenue Impact [CLV & Revenue](06_CLV_and_Revenue_Impact.png)
 
 Examines:
 
