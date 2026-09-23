@@ -126,19 +126,41 @@ The analysis was designed around the following questions:
 
 # 🗄️ Data Modeling & SQL Analytical Marts
 
-SQL was used to transform the raw relational datasets into analytical tables at defined grains before loading the data into Power BI.
+SQL was used to transform the raw relational datasets into three analytical tables designed specifically for Power BI reporting.
 
-This created a cleaner analytical layer, reduced repeated calculations, and allowed business metrics to be calculated at appropriate levels of granularity.
+The tables were created at different analytical grains to support **merchant-level analysis, product performance analysis, and monthly Moniebook adoption tracking**.
 
-| Analytical Table                   | Grain                | Purpose                                             |
-| ---------------------------------- | -------------------- | --------------------------------------------------- |
-| `pbi_customer_360`                 | One row per merchant | CLV, profit, segment, engagement and churn analysis |
-| `powerbi_product_summary`          | One row per product  | Users, sessions, adoption and failure analysis      |
-| `powerbi_moniebook_adoption_curve` | One row per month    | Adoption trends and cumulative penetration          |
-| `powerbi_segment_summary`          | One row per segment  | Merchant count, transaction volume, CLV and churn   |
-| `powerbi_state_summary`            | One row per state    | Merchant activity, churn and Moniebook penetration  |
-| `powerbi_feature_summary`          | One row per feature  | Feature usage, adoption and failure metrics         |
-| `powerbi_churn_risk_table`         | Merchant/risk level  | Inactivity and operational risk indicators          |
+| Analytical Table                 | Grain                | Purpose                                                                              |
+| -------------------------------- | -------------------- | ------------------------------------------------------------------------------------ |
+| `pbi_customer_360`               | One row per merchant | Customer-level CLV, profit, segment, engagement, activity and churn analysis         |
+| `pbi_monthly_moniebook_adoption` | One row per month    | Monthly Moniebook adoption, new adopters, cumulative adoption and penetration trends |
+| `pbi_product_performance`        | One row per product  | Product users, sessions, adoption, transaction activity and failure performance      |
+
+### SQL Transformation Workflow
+
+```text
+Raw Relational Data
+        │
+        ▼
+   SQL Queries
+        │
+        ├── Customer-level aggregation
+        │       ↓
+        │   pbi_customer_360
+        │
+        ├── Monthly adoption aggregation
+        │       ↓
+        │   pbi_monthly_moniebook_adoption
+        │
+        └── Product-level aggregation
+                ↓
+          pbi_product_performance
+                │
+                ▼
+             Power BI
+```
+
+This approach separated the raw transactional data from the reporting layer and provided Power BI with purpose-built analytical tables for dashboard development.
 
 ---
 
@@ -168,11 +190,13 @@ Analyzes transaction failures and product-level issues to identify potential sou
 
 ---
 
-# 📈 Power BI Dashboard
+# 📈 Power BI Dashboard #
+
+[Download Power BI Report](powerbi/Fintech%20Data%20Power%20BI.pbix)
 
 The Power BI report is structured across **8 analytical and operational canvases**.
 
-### 01 — Executive Overview
+### 01 — Executive Overview [Executive Overview](01_Executive_Overview.png)
 
 Provides a high-level view of platform performance, including:
 
@@ -183,13 +207,20 @@ Provides a high-level view of platform performance, including:
 * Product adoption
 * Retention indicators
 
-### 02 — Product Utilization
+### 02 — Product Utilization [Product Utilization](02_Product_Utilization.png)
 
 Analyzes adoption and engagement across the 8 simulated product offerings:
 
-**Payments · POS · Banking · Moniebook · Loans · Cards · Invoicing · Payroll**
+* Payments 
+* POS 
+* Banking 
+* Moniebook
+* Loans
+* Cards
+* Invoicing
+* Payroll
 
-### 03 — Moniebook Adoption
+### 03 — Moniebook Adoption [Moniebook Adoption](03_Moniebook_Adoption.png)
 
 The primary product-adoption analysis examining:
 
@@ -199,7 +230,7 @@ The primary product-adoption analysis examining:
 * Cumulative adoption
 * Adoption gaps
 
-### 04 — Customer Segmentation
+### 04 — Customer Segmentation [Customer Segmentation](04_Customer_Segmentation.png)
 
 Compares merchant segments based on:
 
@@ -209,7 +240,7 @@ Compares merchant segments based on:
 * Profitability
 * Churn
 
-### 05 — Retention & Churn
+### 05 — Retention & Churn [Retention & Churn](05_Retention_Churn.png)
 
 Analyzes:
 
@@ -219,7 +250,7 @@ Analyzes:
 * Churn-risk indicators
 * Engagement decay
 
-### 06 — CLV & Revenue Impact
+### 06 — CLV & Revenue Impact [CLV & Revenue](06_CLV_Revenue.png)
 
 Examines:
 
@@ -229,7 +260,7 @@ Examines:
 * High-value merchants
 * Profitability patterns
 
-### 07 — Regional Performance
+### 07 — Regional Performance [Regional Performance](07_Regional_Performance.png)
 
 Analyzes geographic variation in:
 
@@ -238,7 +269,22 @@ Analyzes geographic variation in:
 * Product adoption
 * Moniebook penetration
 
-### 08 — Merchant 360° Drillthrough
+### 08 — Feature Usage & Stickiness [Feature Usage & Stickiness](08_Feature_Usage.png)
+
+Analyzes feature-level adoption and merchant engagement across the product portfolio, with a focus on:
+
+- Feature adoption rates
+- Unique users by product
+- Usage events
+- Session depth
+- Product-level performance
+- Failed transactions and operational friction
+- Usage concentration across product categories
+- Signals of deeper product engagement and stickiness
+
+The page combines product-level KPIs, usage trends, adoption metrics, and operational performance to identify which products and features generate deeper merchant engagement.
+
+### 09 — Customer 360° Drillthrough [Customer 360](10_Customer_360_Drilltrough.png)
 
 Provides a detailed merchant-level diagnostic view containing:
 
@@ -388,27 +434,27 @@ Profit, CLV, and transaction values are modeled for analytical purposes and shou
 fintech-product-adoption-clv/
 │
 ├── data/
-│   └── synthetic_datasets/
+│   ├── pbi_customer_360.csv
+│   ├── pbi_monthly_moniebook_adoption.csv
+│   └── pbi_product_performance.csv
 │
 ├── sql/
-│   ├── customer_360.sql
-│   ├── product_summary.sql
-│   ├── adoption_analysis.sql
-│   ├── churn_analysis.sql
-│   └── segment_analysis.sql
+│   ├── Fintech_data.sql
 │
 ├── powerbi/
-│   └── fintech_product_adoption.pbix
+│   └── Fintech_Data_Power BI.pbix
 │
 ├── screenshots/
 │   ├── executive_overview.png
 │   ├── product_utilization.png
 │   ├── moniebook_adoption.png
 │   ├── customer_segmentation.png
-│   ├── retention_churn.png
-│   ├── clv_revenue.png
+│   ├── retention_and_churn.png
+│   ├── clv_and_revenue_impact.png
 │   ├── regional_performance.png
-│   └── merchant_360.png
+|   ├── feature_usage.png
+|   ├── tooltip.png
+│   └── customer_360_drilltrough.png
 │
 └── README.md
 ```
