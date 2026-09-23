@@ -28,6 +28,7 @@ The project combines **SQL, MySQL, DAX, and Power BI** to transform raw relation
 
 # 📌 Executive Summary
 
+![Executive Overview](screenshots/executive_overview.png)
 Fintech platforms generate large volumes of transaction and behavioral data, but transaction volume alone does not explain why merchants remain engaged, become inactive, or generate long-term customer value.
 
 This project examines the relationship between:
