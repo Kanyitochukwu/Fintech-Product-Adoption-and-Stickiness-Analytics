@@ -14,13 +14,13 @@ The project combines **SQL, MySQL, DAX, and Power BI** to transform raw relation
 
 * **4-Product Profitability Sweet Spot:** Merchants using **4 integrated products** represented the highest cumulative profitability segment, generating more than **₦100M in simulated profit**.
 
-* **220-Day Moniebook Adoption Gap:** Merchants took an average of approximately **220 days (~7.3 months)** before first adopting Moniebook.
+* **220-Day Moniebook Adoption Gap:** Merchants took an average of approximately **220 days (approx. 7.3 months)** before first adopting Moniebook.
 
 * **53,531 POS Failures:** POS recorded approximately **53,531 failed transactions**, making it the largest source of simulated transaction failures.
 
 * **₦72B+ Transaction Volume:** Medium and Enterprise merchants represented less than 20% of the simulated merchant population but generated more than **₦72B in gross transaction volume**.
 
-* **7–8 Product Retention Pattern:** Merchants using 7–8 products recorded **100% retention in the simulated dataset**, compared with 64–68% among merchants using 0–2 products.
+* **7-8 Product Retention Pattern:** Merchants using 7–8 products recorded **100% retention in the simulated dataset**, compared with 64–68% among merchants using 0-2 products.
 
 * **81% Micro-Merchant Concentration:** Micro-merchants represented approximately **81% of the simulated merchant population**, highlighting a large customer segment with comparatively lower transaction concentration.
 
@@ -196,7 +196,7 @@ Analyzes transaction failures and product-level issues to identify potential sou
 
 The Power BI report is structured across **8 analytical and operational canvases**.
 
-### 01 — Executive Overview [Executive Overview](01_Executive_Overview.png)
+### 01 - Executive Overview [Executive Overview](01_Executive_Overview.png)
 
 Provides a high-level view of platform performance, including:
 
@@ -207,7 +207,7 @@ Provides a high-level view of platform performance, including:
 * Product adoption
 * Retention indicators
 
-### 02 — Product Utilization [Product Utilization](02_Product_Utilization.png)
+### 02 - Product Utilization [Product Utilization](02_Product_Utilization.png)
 
 Analyzes adoption and engagement across the 8 simulated product offerings:
 
@@ -220,7 +220,7 @@ Analyzes adoption and engagement across the 8 simulated product offerings:
 * Invoicing
 * Payroll
 
-### 03 — Moniebook Adoption [Moniebook Adoption](03_Moniebook_Adoption.png)
+### 03 - Moniebook Adoption [Moniebook Adoption](03_Moniebook_Adoption.png)
 
 The primary product-adoption analysis examining:
 
@@ -230,7 +230,7 @@ The primary product-adoption analysis examining:
 * Cumulative adoption
 * Adoption gaps
 
-### 04 — Customer Segmentation [Customer Segmentation](04_Customer_Segmentation.png)
+### 04 - Customer Segmentation [Customer Segmentation](04_Customer_Segmentation.png)
 
 Compares merchant segments based on:
 
@@ -240,7 +240,7 @@ Compares merchant segments based on:
 * Profitability
 * Churn
 
-### 05 — Retention & Churn [Retention & Churn](05_Retention_and_Churn.png)
+### 05 - Retention & Churn [Retention & Churn](05_Retention_and_Churn.png)
 
 Analyzes:
 
@@ -250,7 +250,7 @@ Analyzes:
 * Churn-risk indicators
 * Engagement decay
 
-### 06 — CLV & Revenue Impact [CLV & Revenue](06_CLV_and_Revenue_Impact.png)
+### 06 - CLV & Revenue Impact [CLV & Revenue](06_CLV_and_Revenue_Impact.png)
 
 Examines:
 
@@ -260,7 +260,7 @@ Examines:
 * High-value merchants
 * Profitability patterns
 
-### 07 — Regional Performance [Regional Performance](07_Regional_Performance.png)
+### 07 - Regional Performance [Regional Performance](07_Regional_Performance.png)
 
 Analyzes geographic variation in:
 
@@ -269,7 +269,7 @@ Analyzes geographic variation in:
 * Product adoption
 * Moniebook penetration
 
-### 08 — Feature Usage & Stickiness [Feature Usage & Stickiness](08_Feature_Usage.png)
+### 08 - Feature Usage & Stickiness [Feature Usage & Stickiness](08_Feature_Usage.png)
 
 Analyzes feature-level adoption and merchant engagement across the product portfolio, with a focus on:
 
@@ -284,7 +284,7 @@ Analyzes feature-level adoption and merchant engagement across the product portf
 
 The page combines product-level KPIs, usage trends, adoption metrics, and operational performance to identify which products and features generate deeper merchant engagement.
 
-### 09 — Customer 360° Drillthrough [Customer 360](10_Customer_360_Drilltrough.png)
+### 09 - Customer 360° Drillthrough [Customer 360](10_Customer_360_Drilltrough.png)
 
 Provides a detailed merchant-level diagnostic view containing:
 
