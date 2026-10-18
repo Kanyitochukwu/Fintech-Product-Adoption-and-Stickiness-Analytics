@@ -20,7 +20,7 @@ The project combines **SQL, MySQL, DAX, and Power BI** to transform raw relation
 
 * **₦72B+ Transaction Volume:** Medium and Enterprise merchants represented less than 20% of the simulated merchant population but generated more than **₦72B in gross transaction volume**.
 
-* **7-8 Product Retention Pattern:** Merchants using 7–8 products recorded **100% retention in the simulated dataset**, compared with 64–68% among merchants using 0-2 products.
+* **7-8 Product Retention Pattern:** Merchants using 7-8 products recorded **100% retention in the simulated dataset**, compared with 64–68% among merchants using 0-2 products.
 
 * **81% Micro-Merchant Concentration:** Micro-merchants represented approximately **81% of the simulated merchant population**, highlighting a large customer segment with comparatively lower transaction concentration.
 
