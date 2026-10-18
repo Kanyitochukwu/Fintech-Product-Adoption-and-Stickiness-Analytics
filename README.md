@@ -1,4 +1,4 @@
-# 📊 Fintech Product Adoption & Customer Lifetime Value Analytics
+# Fintech Product Adoption & Customer Lifetime Value Analytics
 
 An end-to-end fintech business intelligence project analyzing **multi-product adoption, merchant engagement, operational friction, customer lifetime value (CLV), and churn risk** across **7,000 merchants and 1.18M sessions** covering 2024–2025.
 
@@ -6,7 +6,7 @@ The project combines **SQL, MySQL, DAX, and Power BI** to transform raw relation
 
 ---
 
-## 📌 Core Analytical Highlights
+## Core Analytical Highlights
 
 * **₦296M Cumulative Profit:** The simulated merchant base generated approximately **₦296M in cumulative profit** across the analysis period.
 
@@ -26,7 +26,7 @@ The project combines **SQL, MySQL, DAX, and Power BI** to transform raw relation
 
 ---
 
-# 📌 Executive Summary
+# Executive Summary
 
 ![Executive Overview](01_Executive_Overview.png)
 
@@ -48,7 +48,7 @@ The objective was to build a **Merchant 360° analytics framework** that enables
 
 ---
 
-# 📊 Data Source
+# Data Source
 
 ### Synthetic / AI-Generated Data
 
@@ -71,7 +71,7 @@ All merchant names, customer records, transaction values, product information, b
 
 ---
 
-# 🎯 Business Questions
+# Business Questions
 
 The analysis was designed around the following questions:
 
@@ -87,7 +87,7 @@ The analysis was designed around the following questions:
 
 ---
 
-# 🧱 Architecture & Data Engineering Workflow
+# Architecture & Data Engineering Workflow
 
 ```text
 ┌───────────────────────────────────────────────┐
@@ -124,7 +124,7 @@ The analysis was designed around the following questions:
 
 ---
 
-# 🗄️ Data Modeling & SQL Analytical Marts
+# Data Modeling & SQL Analytical Marts
 
 SQL was used to transform the raw relational datasets into three analytical tables designed specifically for Power BI reporting.
 
@@ -164,7 +164,7 @@ This approach separated the raw transactional data from the reporting layer and 
 
 ---
 
-# 🔍 Analytical Framework
+# Analytical Framework
 
 The project focuses on five major analytical dimensions.
 
@@ -190,7 +190,7 @@ Analyzes transaction failures and product-level issues to identify potential sou
 
 ---
 
-# 📈 Power BI Dashboard #
+# Power BI Dashboard #
 
 [Download Power BI Report](Fintech%20Data%20Power%20BI.pbix)
 
@@ -299,7 +299,7 @@ Provides a detailed merchant-level diagnostic view containing:
 
 ---
 
-# 💡 Key Business Insights
+# Key Business Insights
 
 > **Note:** The findings below represent patterns observed within the synthetic dataset and should not be interpreted as real-world fintech performance metrics.
 
@@ -346,7 +346,7 @@ These figures describe the simulated dataset and are not representative of actua
 
 ---
 
-# 🎯 Strategic Recommendations
+# Strategic Recommendations
 
 Based on the patterns observed in the simulated data, the analysis suggests several potential business actions.
 
@@ -376,7 +376,7 @@ Use CLV, transaction volume, and churn-risk indicators to prioritize retention r
 
 ---
 
-# ⚠️ Analytical Limitations
+# Analytical Limitations
 
 ### Synthetic Dataset
 
@@ -400,7 +400,7 @@ Profit, CLV, and transaction values are modeled for analytical purposes and shou
 
 ---
 
-# 🛠️ Tech Stack
+# Tech Stack
 
 ### Database & Data Transformation
 
@@ -428,7 +428,7 @@ Profit, CLV, and transaction values are modeled for analytical purposes and shou
 
 ---
 
-# 📂 Project Structure
+# Project Structure
 
 ```text
 fintech-product-adoption-clv/
@@ -461,7 +461,7 @@ fintech-product-adoption-clv/
 
 ---
 
-# 🚀 Project Objective
+# Project Objective
 
 The goal of this project was to demonstrate how a data analyst can move from:
 
@@ -471,6 +471,6 @@ Rather than focusing only on transaction volume, the project evaluates the relat
 
 ---
 
-## 📌 Key Skills Demonstrated
+## Key Skills Demonstrated
 
 **SQL • MySQL • Power BI • DAX • Data Modeling • Customer Analytics • CLV • Churn Analysis • Cohort Analysis • Segmentation • Business Intelligence • Data Storytelling**
