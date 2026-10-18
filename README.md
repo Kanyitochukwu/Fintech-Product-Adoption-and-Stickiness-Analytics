@@ -313,9 +313,9 @@ Merchants using fewer products showed lower simulated retention levels, while me
 
 The dataset showed approximately:
 
-* **0–2 products:** 64-68% retention
-* **3–6 products:** approx. 79% retention
-* **7–8 products:** 100% retention
+* **0-2 products:** 64-68% retention
+* **3-6 products:** approx. 79% retention
+* **7-8 products:** 100% retention
 
 This represents an observed association within the synthetic dataset and does not establish that product adoption causes higher retention.
 
