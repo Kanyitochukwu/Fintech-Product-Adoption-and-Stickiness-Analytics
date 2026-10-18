@@ -313,15 +313,15 @@ Merchants using fewer products showed lower simulated retention levels, while me
 
 The dataset showed approximately:
 
-* **0–2 products:** 64–68% retention
-* **3–6 products:** ~79% retention
+* **0–2 products:** 64-68% retention
+* **3–6 products:** approx. 79% retention
 * **7–8 products:** 100% retention
 
 This represents an observed association within the synthetic dataset and does not establish that product adoption causes higher retention.
 
 ### 3. Moniebook Adoption Gap
 
-Merchants took an average of approximately **220 days (~7.3 months)** before first adopting Moniebook.
+Merchants took an average of approximately **220 days (approx. 7.3 months)** before first adopting Moniebook.
 
 This suggests a significant simulated gap between initial platform engagement and bookkeeping adoption.
 
@@ -337,10 +337,10 @@ Micro-merchants represented approximately **81% of the simulated merchant popula
 
 The simulated dataset showed higher merchant conversion through:
 
-* **Field Sales — 34.5%**
-* **Partner Banks — 34.0%**
-* **Social Media — 27.0%**
-* **Trade Fairs — 23.0%**
+* **Field Sales - 34.5%**
+* **Partner Banks - 34.0%**
+* **Social Media - 27.0%**
+* **Trade Fairs - 23.0%**
 
 These figures describe the simulated dataset and are not representative of actual industry conversion rates.
 
@@ -352,7 +352,7 @@ Based on the patterns observed in the simulated data, the analysis suggests seve
 
 ### 1. Reduce the Moniebook Adoption Gap
 
-Introduce onboarding prompts and guided bookkeeping setup during the first 30 days to reduce the observed 220-day adoption lag.
+Introduce onboarding prompts and guided bookkeeping setup during the first 30 days to reduce the observed 220 day adoption lag.
 
 ### 2. Develop a Simplified Bookkeeping Experience
 
@@ -404,14 +404,14 @@ Profit, CLV, and transaction values are modeled for analytical purposes and shou
 
 ### Database & Data Transformation
 
-* **MySQL** — Relational data storage, joins, transformations, and analytical marts
-* **SQL** — Data cleaning, aggregation, feature engineering, and customer-level analysis
-* **Excel** — Data inspection, validation, and preliminary analysis
+* **MySQL** - Relational data storage, joins, transformations, and analytical marts
+* **SQL** - Data cleaning, aggregation, feature engineering, and customer-level analysis
+* **Excel** - Data inspection, validation, and preliminary analysis
 
 ### Business Intelligence
 
-* **Power BI** — Data modeling, interactive dashboards, drillthrough, visualization, and reporting
-* **DAX** — CLV calculations, inactivity analysis, churn-risk flags, segmentation, and dynamic measures
+* **Power BI** - Data modeling, interactive dashboards, drillthrough, visualization, and reporting
+* **DAX** - CLV calculations, inactivity analysis, churn-risk flags, segmentation, and dynamic measures
 
 ### Analytical Techniques
 
